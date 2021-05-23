@@ -1,0 +1,19 @@
+.game-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+}
+
+.cards {
+  width: 150px;
+  height: 230px;
+  background-size: cover;
+  cursor: pointer;
+  margin: 20px;
+  border: solid black 2px
+}
+
+.cards img {
+  width: 150px;
+  height: 230px;
+}

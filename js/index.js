@@ -1,4 +1,6 @@
-import createDivs from './functions/createDivs.js';
+import createDivs from './services/createDivs.js';
+import createPathList from './services/createPathList.js';
+import renderCards from './view/renderCards.js';
 
 const contentContainer = document.getElementById('content-container');
 
@@ -7,3 +9,7 @@ contentContainer.appendChild(statesContainer);
 
 const gameContainer = createDivs('game-container');
 contentContainer.appendChild(gameContainer);
+
+const pathList = createPathList();
+
+renderCards(pathList, gameContainer);
