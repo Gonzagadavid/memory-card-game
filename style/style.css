@@ -17,3 +17,7 @@
   width: 150px;
   height: 230px;
 }
+
+.select {
+  display: none;
+}
