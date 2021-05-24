@@ -3,6 +3,7 @@ export default class GameStates {
     this.moves = moves;
     this.score = score;
     this.deck = [];
+    this.trying;
   }
 
   addDeck(path) {
@@ -17,5 +18,13 @@ export default class GameStates {
   deckClear() {
     this.deck.pop();
     this.deck.pop();
+  }
+
+  addMoves() {
+    this.moves += 1;
+  }
+
+  checkEqual() {
+    return new Set(this.deck).size === 1;
   }
 }

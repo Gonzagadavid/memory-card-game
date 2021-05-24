@@ -19,5 +19,5 @@
 }
 
 .select {
-  display: none;
+  filter: opacity(0%);
 }

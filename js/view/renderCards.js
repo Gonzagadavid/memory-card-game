@@ -7,7 +7,7 @@ export default function renderCards(pathList, gameContainer) {
     const div = createDivs('cards');
     div.style.backgroundImage = `url(${pathList[index]})`;
     const img = createImages('./images/back.jpg');
-    img.addEventListener('click', (e) => checkCard(e));
+    img.addEventListener('click', (event) => checkCard(event));
     div.appendChild(img);
     gameContainer.appendChild(div);
   }

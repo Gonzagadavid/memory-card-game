@@ -2,7 +2,7 @@ import Game from '../index.js';
 
 export default function checkCard(event) {
   const selectedCard = event.target;
-  const url = selectedCard.parentElement.style.backgroundImage.replace(/url|[\(\)]+/g, '');
+  let url = selectedCard.parentElement.style.backgroundImage.replace(/url|[\(\)"]+/g, '');
 
   if (Game.checkLength()) {
     Game.deckClear();
@@ -12,4 +12,13 @@ export default function checkCard(event) {
 
   Game.addDeck(url);
   selectedCard.classList.add('select');
+
+  if (Game.checkLength()) Game.addMoves();
+
+  if (Game.checkLength()) {
+    if (Game.checkEqual()) {
+    }
+  }
+
+  event.target.removeEventListener('click', (event) => checkCard(event));
 }
