@@ -27,7 +27,7 @@ export default function createPathList() {
   const arrayPath = [];
 
   for (let index = 0; index < randomOder.length; index += 1) {
-    const path = `./images/card${list[randomOder[index]]}.jpg`;
+    const path = `./public/images/card${list[randomOder[index]]}.jpg`;
     arrayPath.push(path);
   }
 

@@ -1,4 +1,5 @@
 import Game from '../index.js';
+import removeClass from '../services/removeClass.js';
 
 export default function checkCard(event) {
   const selectedCard = event.target;
@@ -6,8 +7,7 @@ export default function checkCard(event) {
 
   if (Game.checkLength()) {
     Game.deckClear();
-    const cards = document.querySelectorAll('.select');
-    cards.forEach((card) => card.classList.remove('select'));
+    removeClass('select');
   }
 
   Game.addDeck(url);
@@ -15,10 +15,12 @@ export default function checkCard(event) {
 
   if (Game.checkLength()) Game.addMoves();
 
-  if (Game.checkLength()) {
-    if (Game.checkEqual()) {
-    }
+  if (Game.checkLength() && Game.checkEqual()) {
+    const selectedCards = document.querySelectorAll('.select');
+    selectedCards.forEach((card) => card.parentElement.classList.add('completed'));
+    Game.addScore();
   }
 
+  console.log(Game);
   event.target.removeEventListener('click', (event) => checkCard(event));
 }

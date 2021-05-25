@@ -3,7 +3,7 @@ export default class GameStates {
     this.moves = moves;
     this.score = score;
     this.deck = [];
-    this.trying;
+    this.trying = 0;
   }
 
   addDeck(path) {
@@ -22,9 +22,20 @@ export default class GameStates {
 
   addMoves() {
     this.moves += 1;
+    this.addTrying();
   }
 
   checkEqual() {
     return new Set(this.deck).size === 1;
+  }
+
+  addTrying() {
+    this.trying += 10;
+  }
+
+  addScore() {
+    this.score += this.trying > 100 ? 10 : 110 - this.trying;
+    this.trying = 0;
+    this.moves = 0;
   }
 }

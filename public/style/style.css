@@ -1,0 +1,58 @@
+body {
+  background-image: url('../images/background1.jpg');
+  background-size: 100% 100%;
+}
+
+h1 {
+  font-family: rickAndMorty;
+  text-align: center;
+  font-size: 80px;
+  color: aqua;
+  text-shadow: greenyellow 5px 5px 5px;
+  
+}
+
+#content-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+
+}
+
+.cards {
+  width: 150px;
+  height: 230px;
+  background-size: cover;
+  cursor: pointer;
+  margin: 20px;
+  border: solid black 2px
+}
+
+.cards img {
+  width: 150px;
+  height: 230px;
+}
+
+.select {
+  filter: opacity(0%);
+}
+
+.completed {
+  filter:opacity(60%);
+}
+
+.completed img {
+  display: none;
+}
+
+@font-face {
+  font-family: rickAndMorty;
+  src: url('../fonts/alternative-rick-and-morty-font/get-schwifty.ttf');
+}
