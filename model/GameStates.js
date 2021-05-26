@@ -3,12 +3,21 @@ export default class GameStates {
     this.moves = moves;
     this.score = score;
     this.deck = [];
+    this.ids = [];
     this.trying = 0;
   }
 
   addDeck(path) {
     this.deck.push(path);
     return true;
+  }
+
+  addIds(id) {
+    this.ids.push(id);
+  }
+
+  checkIds(id) {
+    return this.ids.includes(id);
   }
 
   checkLength() {
@@ -18,6 +27,11 @@ export default class GameStates {
   deckClear() {
     this.deck.pop();
     this.deck.pop();
+  }
+
+  idsClear() {
+    this.ids.pop();
+    this.ids.pop();
   }
 
   addMoves() {
@@ -36,6 +50,5 @@ export default class GameStates {
   addScore() {
     this.score += this.trying > 100 ? 10 : 110 - this.trying;
     this.trying = 0;
-    this.moves = 0;
   }
 }
