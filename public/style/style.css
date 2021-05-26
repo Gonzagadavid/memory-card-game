@@ -15,10 +15,27 @@ body {
 .states-container {
   display: flex;
   width: 100%;
-  font-size: 60px;
+  font-size: 40px;
   justify-content: space-around;
   color: white;
+  font-family: blood;
+  /* background-color: cadetblue; */
+  height: 100px;
+  align-items: center;
+}
 
+.states-container div {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  /* background-color: blueviolet; */
+  width: 300px;
+  height: 80px;
+}
+
+.states-container div p {
+  /* background-color: chartreuse; */
+  width: 120px;
 }
 
 .game-container {
@@ -57,4 +74,9 @@ body {
 @font-face {
   font-family: rickAndMorty;
   src: url('../fonts/alternative-rick-and-morty-font/get-schwifty.ttf');
+}
+
+@font-face {
+  font-family: blood;
+  src: url('../fonts/bloodseeker/BLOODSEEKER\ -\ DEMO.ttf');
 }

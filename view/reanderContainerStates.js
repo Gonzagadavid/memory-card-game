@@ -10,5 +10,8 @@ export default function renderContainerStates() {
   const score = createDivs('score');
   statesContiner.appendChild(score);
 
+  const time = createDivs('time');
+  statesContiner.appendChild(time);
+
   renderStates();
 }
