@@ -1,4 +1,5 @@
 import GameStates from './model/GameStates.js';
+import finishedContainer from './view/finishedContainer.js';
 import renderGame from './view/renderGame.js';
 import timer from './view/timer.js';
 
@@ -9,3 +10,5 @@ export default Game;
 
 renderGame(contentContainer);
 timer();
+
+// finishedContainer();

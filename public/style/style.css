@@ -71,6 +71,14 @@ body {
   display: none;
 }
 
+.finished-game {
+  position: fixed;
+  height: 80%;
+  width: 80%;
+  background-color: aqua;
+  top :50px;
+}
+
 @font-face {
   font-family: rickAndMorty;
   src: url('../fonts/alternative-rick-and-morty-font/get-schwifty.ttf');
