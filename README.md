@@ -19,8 +19,7 @@
 - Renderização de elementos HTML feitos utilizando javascript através do DOM;
 - Armazenamento de de dados no local storage;
 - Códigos organizados de acordo com suas responsabilidades em pastas;
-- Exportação de arquivo através do ESModules;
-- Class desenvolvida para que seus métodos auxilie a dinâmica do jogo.
+- Exportação de arquivo através do ESModules.
 
 
 
