@@ -3,7 +3,6 @@ import checkCardRecord from '../services/checkRecord.js';
 import removeClass from '../services/removeClass.js';
 import finishedContainer from '../view/finishedContainer.js';
 import renderStates from '../view/renderStates.js';
-import timer from '../view/timer.js';
 
 export default function checkCard(event) {
   const selectedCard = event.target;
@@ -32,7 +31,7 @@ export default function checkCard(event) {
   if (document.querySelectorAll('.completed').length === 20) {
     checkCardRecord(Game);
     Game.finishedGameRender();
-    // finishedContainer();
+    finishedContainer();
   }
 
   event.target.removeEventListener('click', (event) => checkCard(event));

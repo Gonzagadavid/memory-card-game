@@ -36,6 +36,13 @@ export default function finishedContainer() {
   gif.src = 'https://media2.giphy.com/media/35nU79vBbeOm4/giphy.gif?cid=790b76111d7b976bbe744ccc09bb733514349bef33a8c007&rid=giphy.gif&ct=s';
 
   finished.appendChild(gif);
-}
 
-//<iframe src="https://giphy.com/embed/35nU79vBbeOm4" width="251" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/rick-sanchez-35nU79vBbeOm4">via GIPHY</a></p>
+  const btnAgain = document.createElement('button');
+  btnAgain.innerHTML = 'Try Again';
+  btnAgain.className = 'btn-again';
+  btnAgain.addEventListener('click', (e) => {
+    window.scrollTo(0, 0);
+    window.location.reload();
+  });
+  container.appendChild(btnAgain);
+}

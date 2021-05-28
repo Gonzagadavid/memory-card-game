@@ -10,5 +10,3 @@ export default Game;
 
 renderGame(contentContainer);
 timer();
-
-finishedContainer();

@@ -104,6 +104,23 @@ body {
   margin-right: 70px;
 }
 
+.btn-again {
+  background-color: transparent;
+  font-family: blood;
+  border: none;
+  color: white;
+  font-size: 40px;
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+.btn-again:hover {
+  color: rgb(72, 114, 124);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
 
 @font-face {
   font-family: rickAndMorty;
