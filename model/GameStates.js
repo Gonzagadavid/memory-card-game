@@ -5,6 +5,7 @@ export default class GameStates {
     this.deck = [];
     this.ids = [];
     this.trying = 0;
+    this.finishedGame = false;
   }
 
   addDeck(path) {
@@ -50,5 +51,9 @@ export default class GameStates {
   addScore() {
     this.score += this.trying > 100 ? 10 : 110 - this.trying;
     this.trying = 0;
+  }
+
+  finishedGameRender() {
+    this.finishedGame = true;
   }
 }

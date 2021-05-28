@@ -1,7 +1,10 @@
 import Game from '../index.js';
+import checkCardRecord from '../services/checkRecord.js';
 import removeClass from '../services/removeClass.js';
+import finishedContainer from '../view/finishedContainer.js';
 import renderStates from '../view/renderStates.js';
 import timer from '../view/timer.js';
+
 export default function checkCard(event) {
   const selectedCard = event.target;
   let url = selectedCard.parentElement.style.backgroundImage.replace(/url|[\(\)"]+/g, '');
@@ -25,10 +28,11 @@ export default function checkCard(event) {
     selectedCards.forEach((card) => card.parentElement.classList.add('completed'));
     Game.addScore();
   }
-  // console.log(timer);
 
   if (document.querySelectorAll('.completed').length === 20) {
-    clearInterval(timer);
+    checkCardRecord(Game);
+    Game.finishedGameRender();
+    // finishedContainer();
   }
 
   event.target.removeEventListener('click', (event) => checkCard(event));
