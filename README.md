@@ -14,9 +14,9 @@
 
 
 
-### Características do projeto:
+### Características que busquei desenvolver no projeto:
 
-- Renderização de elementos HTML feitos através do DOM;
+- Renderização de elementos HTML feitos utilizando javascript através do DOM;
 - Armazenamento de de dados no local storage;
 - Códigos organizados de acordo com suas responsabilidades em pastas;
 - Exportação de arquivo através do ESModules;
