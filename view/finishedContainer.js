@@ -33,12 +33,13 @@ export default function finishedContainer() {
   createFinishedSates(container, currentStates);
 
   const gif = document.createElement('img');
-  gif.src = 'https://media2.giphy.com/media/35nU79vBbeOm4/giphy.gif?cid=790b76111d7b976bbe744ccc09bb733514349bef33a8c007&rid=giphy.gif&ct=s';
+  gif.src =
+    'https://media2.giphy.com/media/35nU79vBbeOm4/giphy.gif?cid=790b76111d7b976bbe744ccc09bb733514349bef33a8c007&rid=giphy.gif&ct=s';
 
   finished.appendChild(gif);
 
   const btnAgain = document.createElement('button');
-  btnAgain.innerHTML = 'Try Again';
+  btnAgain.innerHTML = '<i class="fas fa-redo"></i> Try Again';
   btnAgain.className = 'btn-again';
   btnAgain.addEventListener('click', (e) => {
     window.scrollTo(0, 0);
