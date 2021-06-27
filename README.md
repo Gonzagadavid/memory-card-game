@@ -4,7 +4,7 @@
 
 ## Projeto de iniciativa pessoal, onde o usuário tem que encontrar os pares das cartas. Durante a partida o tempo é cronometrado  e os movimentos contados, no fim da partida sua performasse é exibida juntamente com a seu recorde que estará salvo no localStorage do navegador, sendo assim, o usuário tem uma referência para se auto-superar.
 
-Acesse a <a href="https://gonzagadavid.github.io/memory-card-game/" target="_blank" >Página do Projeto</a>
+## Acesse a <a href="https://gonzagadavid.github.io/memory-card-game/" target="_blank" >Página do Projeto</a>
 
 <img src="./public/images/readme1.png">
 
